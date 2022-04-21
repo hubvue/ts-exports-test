@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@cckim/ts-exports-test': 0.0.1
   '@types/jest': ^27.4.1
   '@types/node': ^17.0.21
   '@typescript-eslint/eslint-plugin': ^5.13.0
@@ -23,6 +24,9 @@ specifiers:
   typedoc: ^0.22.13
   typedoc-theme-category: ^1.0.7
   typescript: ^4.7.0-beta
+
+dependencies:
+  '@cckim/ts-exports-test': 0.0.1
 
 devDependencies:
   '@types/jest': 27.4.1
@@ -379,6 +383,10 @@ packages:
   /@bcoe/v8-coverage/0.2.3:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
+
+  /@cckim/ts-exports-test/0.0.1:
+    resolution: {integrity: sha512-VYizCLHyROD/1yrzX58T5EqAj5Z8PDwlHG9/exJJNY1jux6osptKF/p8TKW/YBmIA3gBVSJe/lNViuniNElA0Q==}
+    dev: false
 
   /@cspotcode/source-map-consumer/0.8.0:
     resolution: {integrity: sha512-41qniHzTU8yAGbCp04ohlmSrZf8bkf/iJsl3V0dRGsQN/5GFfx+LbCSsCpp2gqrqjTVg/K6O8ycoV35JIwAzAg==}
@@ -1325,7 +1333,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: artifactory.intra.xiaojukeji.com/fsevents/2.3.2
+      fsevents: 2.3.2
     dev: true
 
   /ci-info/3.3.0:
@@ -1643,11 +1651,155 @@ packages:
       is-symbol: 1.0.4
     dev: true
 
+  /esbuild-android-64/0.14.29:
+    resolution: {integrity: sha512-tJuaN33SVZyiHxRaVTo1pwW+rn3qetJX/SRuc/83rrKYtyZG0XfsQ1ao1nEudIt9w37ZSNXR236xEfm2C43sbw==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-android-arm64/0.14.29:
+    resolution: {integrity: sha512-D74dCv6yYnMTlofVy1JKiLM5JdVSQd60/rQfJSDP9qvRAI0laPXIG/IXY1RG6jobmFMUfL38PbFnCqyI/6fPXg==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-darwin-64/0.14.29:
+    resolution: {integrity: sha512-+CJaRvfTkzs9t+CjGa0Oa28WoXa7EeLutQhxus+fFcu0MHhsBhlmeWHac3Cc/Sf/xPi1b2ccDFfzGYJCfV0RrA==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-darwin-arm64/0.14.29:
+    resolution: {integrity: sha512-5Wgz/+zK+8X2ZW7vIbwoZ613Vfr4A8HmIs1XdzRmdC1kG0n5EG5fvKk/jUxhNlrYPx1gSY7XadQ3l4xAManPSw==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-freebsd-64/0.14.29:
+    resolution: {integrity: sha512-VTfS7Bm9QA12JK1YXF8+WyYOfvD7WMpbArtDj6bGJ5Sy5xp01c/q70Arkn596aGcGj0TvQRplaaCIrfBG1Wdtg==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-freebsd-arm64/0.14.29:
+    resolution: {integrity: sha512-WP5L4ejwLWWvd3Fo2J5mlXvG3zQHaw5N1KxFGnUc4+2ZFZknP0ST63i0IQhpJLgEJwnQpXv2uZlU1iWZjFqEIg==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-32/0.14.29:
+    resolution: {integrity: sha512-4myeOvFmQBWdI2U1dEBe2DCSpaZyjdQtmjUY11Zu2eQg4ynqLb8Y5mNjNU9UN063aVsCYYfbs8jbken/PjyidA==}
+    engines: {node: '>=12'}
+    cpu: [ia32]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-64/0.14.29:
+    resolution: {integrity: sha512-iaEuLhssReAKE7HMwxwFJFn7D/EXEs43fFy5CJeA4DGmU6JHh0qVJD2p/UP46DvUXLRKXsXw0i+kv5TdJ1w5pg==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-arm/0.14.29:
+    resolution: {integrity: sha512-OXa9D9QL1hwrAnYYAHt/cXAuSCmoSqYfTW/0CEY0LgJNyTxJKtqc5mlwjAZAvgyjmha0auS/sQ0bXfGf2wAokQ==}
+    engines: {node: '>=12'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-arm64/0.14.29:
+    resolution: {integrity: sha512-KYf7s8wDfUy+kjKymW3twyGT14OABjGHRkm9gPJ0z4BuvqljfOOUbq9qT3JYFnZJHOgkr29atT//hcdD0Pi7Mw==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-mips64le/0.14.29:
+    resolution: {integrity: sha512-05jPtWQMsZ1aMGfHOvnR5KrTvigPbU35BtuItSSWLI2sJu5VrM8Pr9Owym4wPvA4153DFcOJ1EPN/2ujcDt54g==}
+    engines: {node: '>=12'}
+    cpu: [mips64el]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-ppc64le/0.14.29:
+    resolution: {integrity: sha512-FYhBqn4Ir9xG+f6B5VIQVbRuM4S6qwy29dDNYFPoxLRnwTEKToIYIUESN1qHyUmIbfO0YB4phG2JDV2JDN9Kgw==}
+    engines: {node: '>=12'}
+    cpu: [ppc64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-riscv64/0.14.29:
+    resolution: {integrity: sha512-eqZMqPehkb4nZcffnuOpXJQdGURGd6GXQ4ZsDHSWyIUaA+V4FpMBe+5zMPtXRD2N4BtyzVvnBko6K8IWWr36ew==}
+    engines: {node: '>=12'}
+    cpu: [riscv64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-s390x/0.14.29:
+    resolution: {integrity: sha512-o7EYajF1rC/4ho7kpSG3gENVx0o2SsHm7cJ5fvewWB/TEczWU7teDgusGSujxCYcMottE3zqa423VTglNTYhjg==}
+    engines: {node: '>=12'}
+    cpu: [s390x]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-netbsd-64/0.14.29:
+    resolution: {integrity: sha512-/esN6tb6OBSot6+JxgeOZeBk6P8V/WdR3GKBFeFpSqhgw4wx7xWUqPrdx4XNpBVO7X4Ipw9SAqgBrWHlXfddww==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [netbsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /esbuild-node-loader/0.6.5:
     resolution: {integrity: sha512-uPP+dllWm38cFvDysdocutN3lfe5pTIbddAHp1ENyLzpHYqE2r+3Wo+pfg9X3p8DFWwzIisft5YkeBIthIcixw==}
     dependencies:
       esbuild: 0.14.29
     dev: true
+
+  /esbuild-openbsd-64/0.14.29:
+    resolution: {integrity: sha512-jUTdDzhEKrD0pLpjmk0UxwlfNJNg/D50vdwhrVcW/D26Vg0hVbthMfb19PJMatzclbK7cmgk1Nu0eNS+abzoHw==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [openbsd]
+    requiresBuild: true
+    dev: true
+    optional: true
 
   /esbuild-register/3.3.2_esbuild@0.14.29:
     resolution: {integrity: sha512-jceAtTO6zxPmCfSD5cBb3rgIK1vmuqCKYwgylHiS1BF4pq0jJiJb4K2QMuqF4BEw7XDBRatYzip0upyTzfkgsQ==}
@@ -1657,32 +1809,68 @@ packages:
       esbuild: 0.14.29
     dev: true
 
+  /esbuild-sunos-64/0.14.29:
+    resolution: {integrity: sha512-EfhQN/XO+TBHTbkxwsxwA7EfiTHFe+MNDfxcf0nj97moCppD9JHPq48MLtOaDcuvrTYOcrMdJVeqmmeQ7doTcg==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [sunos]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-windows-32/0.14.29:
+    resolution: {integrity: sha512-uoyb0YAJ6uWH4PYuYjfGNjvgLlb5t6b3zIaGmpWPOjgpr1Nb3SJtQiK4YCPGhONgfg2v6DcJgSbOteuKXhwqAw==}
+    engines: {node: '>=12'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-windows-64/0.14.29:
+    resolution: {integrity: sha512-X9cW/Wl95QjsH8WUyr3NqbmfdU72jCp71cH3pwPvI4CgBM2IeOUDdbt6oIGljPu2bf5eGDIo8K3Y3vvXCCTd8A==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-windows-arm64/0.14.29:
+    resolution: {integrity: sha512-+O/PI+68fbUZPpl3eXhqGHTGK7DjLcexNnyJqtLZXOFwoAjaXlS5UBCvVcR3o2va+AqZTj8o6URaz8D2K+yfQQ==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /esbuild/0.14.29:
     resolution: {integrity: sha512-SQS8cO8xFEqevYlrHt6exIhK853Me4nZ4aMW6ieysInLa0FMAL+AKs87HYNRtR2YWRcEIqoXAHh+Ytt5/66qpg==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      esbuild-android-64: artifactory.intra.xiaojukeji.com/esbuild-android-64/0.14.29
-      esbuild-android-arm64: artifactory.intra.xiaojukeji.com/esbuild-android-arm64/0.14.29
-      esbuild-darwin-64: artifactory.intra.xiaojukeji.com/esbuild-darwin-64/0.14.29
-      esbuild-darwin-arm64: artifactory.intra.xiaojukeji.com/esbuild-darwin-arm64/0.14.29
-      esbuild-freebsd-64: artifactory.intra.xiaojukeji.com/esbuild-freebsd-64/0.14.29
-      esbuild-freebsd-arm64: artifactory.intra.xiaojukeji.com/esbuild-freebsd-arm64/0.14.29
-      esbuild-linux-32: artifactory.intra.xiaojukeji.com/esbuild-linux-32/0.14.29
-      esbuild-linux-64: artifactory.intra.xiaojukeji.com/esbuild-linux-64/0.14.29
-      esbuild-linux-arm: artifactory.intra.xiaojukeji.com/esbuild-linux-arm/0.14.29
-      esbuild-linux-arm64: artifactory.intra.xiaojukeji.com/esbuild-linux-arm64/0.14.29
-      esbuild-linux-mips64le: artifactory.intra.xiaojukeji.com/esbuild-linux-mips64le/0.14.29
-      esbuild-linux-ppc64le: artifactory.intra.xiaojukeji.com/esbuild-linux-ppc64le/0.14.29
-      esbuild-linux-riscv64: artifactory.intra.xiaojukeji.com/esbuild-linux-riscv64/0.14.29
-      esbuild-linux-s390x: artifactory.intra.xiaojukeji.com/esbuild-linux-s390x/0.14.29
-      esbuild-netbsd-64: artifactory.intra.xiaojukeji.com/esbuild-netbsd-64/0.14.29
-      esbuild-openbsd-64: artifactory.intra.xiaojukeji.com/esbuild-openbsd-64/0.14.29
-      esbuild-sunos-64: artifactory.intra.xiaojukeji.com/esbuild-sunos-64/0.14.29
-      esbuild-windows-32: artifactory.intra.xiaojukeji.com/esbuild-windows-32/0.14.29
-      esbuild-windows-64: artifactory.intra.xiaojukeji.com/esbuild-windows-64/0.14.29
-      esbuild-windows-arm64: artifactory.intra.xiaojukeji.com/esbuild-windows-arm64/0.14.29
+      esbuild-android-64: 0.14.29
+      esbuild-android-arm64: 0.14.29
+      esbuild-darwin-64: 0.14.29
+      esbuild-darwin-arm64: 0.14.29
+      esbuild-freebsd-64: 0.14.29
+      esbuild-freebsd-arm64: 0.14.29
+      esbuild-linux-32: 0.14.29
+      esbuild-linux-64: 0.14.29
+      esbuild-linux-arm: 0.14.29
+      esbuild-linux-arm64: 0.14.29
+      esbuild-linux-mips64le: 0.14.29
+      esbuild-linux-ppc64le: 0.14.29
+      esbuild-linux-riscv64: 0.14.29
+      esbuild-linux-s390x: 0.14.29
+      esbuild-netbsd-64: 0.14.29
+      esbuild-openbsd-64: 0.14.29
+      esbuild-sunos-64: 0.14.29
+      esbuild-windows-32: 0.14.29
+      esbuild-windows-64: 0.14.29
+      esbuild-windows-arm64: 0.14.29
     dev: true
 
   /escalade/3.1.1:
@@ -1715,7 +1903,7 @@ packages:
       esutils: 2.0.3
       optionator: 0.8.3
     optionalDependencies:
-      source-map: artifactory.intra.xiaojukeji.com/source-map/0.6.1
+      source-map: 0.6.1
     dev: true
 
   /eslint-config-prettier/8.5.0_eslint@8.12.0:
@@ -2017,6 +2205,14 @@ packages:
   /fs.realpath/1.0.0:
     resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
     dev: true
+
+  /fsevents/2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
 
   /function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
@@ -2634,7 +2830,7 @@ packages:
       micromatch: 4.0.5
       walker: 1.0.8
     optionalDependencies:
-      fsevents: artifactory.intra.xiaojukeji.com/fsevents/2.3.2
+      fsevents: 2.3.2
     dev: true
 
   /jest-jasmine2/27.5.1:
@@ -3025,7 +3221,7 @@ packages:
     dependencies:
       universalify: 2.0.0
     optionalDependencies:
-      graceful-fs: artifactory.intra.xiaojukeji.com/graceful-fs/4.2.9
+      graceful-fs: 4.2.9
     dev: true
 
   /kleur/3.0.3:
@@ -3670,7 +3866,7 @@ packages:
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: artifactory.intra.xiaojukeji.com/fsevents/2.3.2
+      fsevents: 2.3.2
     dev: true
 
   /run-parallel/1.2.0:
@@ -4483,253 +4679,6 @@ packages:
     resolution: {integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==}
     engines: {node: '>=6'}
     dev: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-android-64/0.14.29:
-    resolution: {integrity: sha1-wJYMhMm4MrreIIMVFeidMlSdR2k=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-android-64/-/esbuild-android-64-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-android-64%2F-%2Fesbuild-android-64-0.14.29.tgz}
-    name: esbuild-android-64
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [android]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-android-arm64/0.14.29:
-    resolution: {integrity: sha1-js6zq+Wr3lSJ1qXL5qfBBE9xEV8=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-android-arm64/-/esbuild-android-arm64-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-android-arm64%2F-%2Fesbuild-android-arm64-0.14.29.tgz}
-    name: esbuild-android-arm64
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [arm64]
-    os: [android]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-darwin-64/0.14.29:
-    resolution: {integrity: sha1-JvPxQQIxDsuPLZNRxbekemDSzIo=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-darwin-64/-/esbuild-darwin-64-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-darwin-64%2F-%2Fesbuild-darwin-64-0.14.29.tgz}
-    name: esbuild-darwin-64
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-darwin-arm64/0.14.29:
-    resolution: {integrity: sha1-bS2J39k3mSZJI5cR7VuG5RsTvYk=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-darwin-arm64%2F-%2Fesbuild-darwin-arm64-0.14.29.tgz}
-    name: esbuild-darwin-arm64
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-freebsd-64/0.14.29:
-    resolution: {integrity: sha1-LLQaB2XQBA8IOCgKITyBu+YtY5Q=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-freebsd-64/-/esbuild-freebsd-64-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-freebsd-64%2F-%2Fesbuild-freebsd-64-0.14.29.tgz}
-    name: esbuild-freebsd-64
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [freebsd]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-freebsd-arm64/0.14.29:
-    resolution: {integrity: sha1-4befu2Pq7/MkzwVRnvp/8SzkWGo=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-freebsd-arm64/-/esbuild-freebsd-arm64-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-freebsd-arm64%2F-%2Fesbuild-freebsd-arm64-0.14.29.tgz}
-    name: esbuild-freebsd-arm64
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [arm64]
-    os: [freebsd]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-linux-32/0.14.29:
-    resolution: {integrity: sha1-pKWgsWWxUIG8MieYbhDdSUPtt9Y=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-linux-32/-/esbuild-linux-32-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-linux-32%2F-%2Fesbuild-linux-32-0.14.29.tgz}
-    name: esbuild-linux-32
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [ia32]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-linux-64/0.14.29:
-    resolution: {integrity: sha1-TEUAiMhPi/0ixR0Rb1lBaGS4VIE=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-linux-64/-/esbuild-linux-64-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-linux-64%2F-%2Fesbuild-linux-64-0.14.29.tgz}
-    name: esbuild-linux-64
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-linux-arm/0.14.29:
-    resolution: {integrity: sha1-p+L+pVhSXquBKx/ifXomWc0btyM=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-linux-arm/-/esbuild-linux-arm-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-linux-arm%2F-%2Fesbuild-linux-arm-0.14.29.tgz}
-    name: esbuild-linux-arm
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [arm]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-linux-arm64/0.14.29:
-    resolution: {integrity: sha1-0aI5k7JssfY/dAMpsvwJIY5Ji9E=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-linux-arm64/-/esbuild-linux-arm64-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-linux-arm64%2F-%2Fesbuild-linux-arm64-0.14.29.tgz}
-    name: esbuild-linux-arm64
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-linux-mips64le/0.14.29:
-    resolution: {integrity: sha1-5wjFJ/B4VXTkAIKM2+09mxe13f8=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-linux-mips64le/-/esbuild-linux-mips64le-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-linux-mips64le%2F-%2Fesbuild-linux-mips64le-0.14.29.tgz}
-    name: esbuild-linux-mips64le
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [mips64el]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-linux-ppc64le/0.14.29:
-    resolution: {integrity: sha1-ATfRs4vq42pXF270XpB0DnNN9QI=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-linux-ppc64le/-/esbuild-linux-ppc64le-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-linux-ppc64le%2F-%2Fesbuild-linux-ppc64le-0.14.29.tgz}
-    name: esbuild-linux-ppc64le
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [ppc64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-linux-riscv64/0.14.29:
-    resolution: {integrity: sha1-ovcyNTR6WAKdys8PuRyeuL68irs=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-linux-riscv64/-/esbuild-linux-riscv64-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-linux-riscv64%2F-%2Fesbuild-linux-riscv64-0.14.29.tgz}
-    name: esbuild-linux-riscv64
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [riscv64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-linux-s390x/0.14.29:
-    resolution: {integrity: sha1-D3MQ/x2uxGPq2bnia3qgg6n58e4=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-linux-s390x/-/esbuild-linux-s390x-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-linux-s390x%2F-%2Fesbuild-linux-s390x-0.14.29.tgz}
-    name: esbuild-linux-s390x
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [s390x]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-netbsd-64/0.14.29:
-    resolution: {integrity: sha1-upoNnLiu1ztoSCUSaSf3XU/kT/k=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-netbsd-64/-/esbuild-netbsd-64-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-netbsd-64%2F-%2Fesbuild-netbsd-64-0.14.29.tgz}
-    name: esbuild-netbsd-64
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [netbsd]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-openbsd-64/0.14.29:
-    resolution: {integrity: sha1-Ntviwy2JkQZ5G1869z81khP3G4o=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-openbsd-64/-/esbuild-openbsd-64-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-openbsd-64%2F-%2Fesbuild-openbsd-64-0.14.29.tgz}
-    name: esbuild-openbsd-64
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [openbsd]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-sunos-64/0.14.29:
-    resolution: {integrity: sha1-5fhXwSFEHsY7+bOZohMUCafTROU=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-sunos-64/-/esbuild-sunos-64-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-sunos-64%2F-%2Fesbuild-sunos-64-0.14.29.tgz}
-    name: esbuild-sunos-64
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [sunos]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-windows-32/0.14.29:
-    resolution: {integrity: sha1-nC8asHGoKPOQHR150gWYKnS92m4=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-windows-32/-/esbuild-windows-32-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-windows-32%2F-%2Fesbuild-windows-32-0.14.29.tgz}
-    name: esbuild-windows-32
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [ia32]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-windows-64/0.14.29:
-    resolution: {integrity: sha1-hfvOfCSSUhiWRRuY1kmn25PlJmc=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-windows-64/-/esbuild-windows-64-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-windows-64%2F-%2Fesbuild-windows-64-0.14.29.tgz}
-    name: esbuild-windows-64
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/esbuild-windows-arm64/0.14.29:
-    resolution: {integrity: sha1-CqepobxDpjNQvPV02UtjkXbwZbU=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/esbuild-windows-arm64/-/esbuild-windows-arm64-0.14.29.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-windows-arm64%2F-%2Fesbuild-windows-arm64-0.14.29.tgz}
-    name: esbuild-windows-arm64
-    version: 0.14.29
-    engines: {node: '>=12'}
-    cpu: [arm64]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/fsevents/2.3.2:
-    resolution: {integrity: sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/fsevents/-/fsevents-2.3.2.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Ffsevents%2F-%2Ffsevents-2.3.2.tgz}
-    name: fsevents
-    version: 2.3.2
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/graceful-fs/4.2.9:
-    resolution: {integrity: sha1-BBsF30V1Xlh6JJQiebnRExRuHJY=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/graceful-fs/-/graceful-fs-4.2.9.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fgraceful-fs%2F-%2Fgraceful-fs-4.2.9.tgz}
-    name: graceful-fs
-    version: 4.2.9
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  artifactory.intra.xiaojukeji.com/source-map/0.6.1:
-    resolution: {integrity: sha1-dHIq8y6WFOnCh6jQu95IteLxomM=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/source-map/-/source-map-0.6.1.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fsource-map%2F-%2Fsource-map-0.6.1.tgz}
-    name: source-map
-    version: 0.6.1
-    engines: {node: '>=0.10.0'}
-    requiresBuild: true
-    dev: true
-    optional: true
 
   artifactory.intra.xiaojukeji.com/typescript/4.7.0-dev.20220421:
     resolution: {integrity: sha1-NNCj06q25jlNdeWAbYD/hYRhEPo=, registry: http://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/typescript/-/typescript-4.7.0-dev.20220421.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Ftypescript%2F-%2Ftypescript-4.7.0-dev.20220421.tgz}

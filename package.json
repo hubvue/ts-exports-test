@@ -70,5 +70,8 @@
   },
   "homepage": "https://github.com/hubvue/single-repo-starter/tree/main#readme",
   "author": "hubvue",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@cckim/ts-exports-test": "0.0.1"
+  }
 }
