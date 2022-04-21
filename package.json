@@ -72,6 +72,7 @@
   "author": "hubvue",
   "license": "MIT",
   "dependencies": {
-    "@cckim/ts-exports-test": "0.0.1"
+    "@cckim/ts-exports-test": "0.0.1",
+    "@cckim/utils": "^1.1.1"
   }
 }
