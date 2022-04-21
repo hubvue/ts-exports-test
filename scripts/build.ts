@@ -12,7 +12,7 @@ const generateConfig = (name: string): Options => {
   return {
     name,
     target: 'node14',
-    entry: ['src/index.ts'],
+    entry: ['src/**/index.ts'],
     format: ['cjs', 'esm'],
     dts: true,
     replaceNodeEnv: true,
